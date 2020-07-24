@@ -1,0 +1,8 @@
+<h1>Latest questions by published date</h1>
+<ul>
+    {% for question in latest_question_list %}
+        <li>
+            <a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a>
+        </li>
+    {% endfor %}
+</ul>
