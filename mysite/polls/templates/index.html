@@ -1,3 +1,7 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'polls/style.css' %}">
+
 <h1>Latest questions by published date</h1>
 <ul>
     {% for question in latest_question_list %}
